@@ -32,11 +32,30 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zOX-6E-fjL" secondAttribute="bottom" id="hjW-7j-ZRq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="UIKit map" id="J5L-Vg-acZ"/>
+                    <navigationItem key="navigationItem" title="UIKit map" id="J5L-Vg-acZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="h1h-a7-8sK">
+                            <connections>
+                                <segue destination="mf9-fx-5XY" kind="show" destinationCreationSelector="segueSwiftUI:" id="w4j-aF-4TQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapaUIKIT" destination="zOX-6E-fjL" id="Gtv-rr-PaP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1038.9312977099237" y="-2.1126760563380285"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="VHN-Qg-DeI">
+            <objects>
+                <hostingController id="mf9-fx-5XY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NwT-TQ-x2C"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6K-r5-pch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EcL-eg-sLg">

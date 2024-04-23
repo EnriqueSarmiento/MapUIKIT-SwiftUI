@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MapSwiftUI: View {
+   
+   @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 29.9792, longitude: 31.1342), latitudinalMeters: 1000, longitudinalMeters: 1000)
+   
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       VStack{
+          Map(coordinateRegion: $region)
+       }.navigationTitle("MAPA SwiftUI")
     }
-}
-
-#Preview {
-    MapSwiftUI()
 }
