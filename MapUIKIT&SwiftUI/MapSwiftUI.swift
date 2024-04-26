@@ -26,7 +26,15 @@ struct MapSwiftUI: View {
     var body: some View {
        VStack{
           Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: nil)
-       }.navigationTitle("MAPA SwiftUI").onAppear{
+       }.navigationTitle("MAPA SwiftUI")
+          .toolbar(content: {
+             ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink(destination: PlacesView()) {
+                   Text("lugares")
+                }
+             }
+          })
+          .onAppear{
           showLocation()
        }
     }
