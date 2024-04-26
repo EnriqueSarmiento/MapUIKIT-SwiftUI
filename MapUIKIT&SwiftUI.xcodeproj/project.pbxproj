@@ -10,6 +10,7 @@
 		3E37F80C2BD8615D009D1E4E /* MapSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37F80B2BD8615D009D1E4E /* MapSwiftUI.swift */; };
 		3E37F80E2BD86B0A009D1E4E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37F80D2BD86B0A009D1E4E /* LocationManager.swift */; };
 		3E48A6E22BDC096F00ED1FB2 /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48A6E12BDC096F00ED1FB2 /* PlacesView.swift */; };
+		3E48A6E42BDC0F6700ED1FB2 /* BuscadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48A6E32BDC0F6700ED1FB2 /* BuscadorViewController.swift */; };
 		3E9B93A72BD8562900504028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B93A62BD8562900504028 /* AppDelegate.swift */; };
 		3E9B93A92BD8562900504028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B93A82BD8562900504028 /* SceneDelegate.swift */; };
 		3E9B93AB2BD8562900504028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B93AA2BD8562900504028 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		3E37F80B2BD8615D009D1E4E /* MapSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftUI.swift; sourceTree = "<group>"; };
 		3E37F80D2BD86B0A009D1E4E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		3E48A6E12BDC096F00ED1FB2 /* PlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
+		3E48A6E32BDC0F6700ED1FB2 /* BuscadorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscadorViewController.swift; sourceTree = "<group>"; };
 		3E9B93A32BD8562900504028 /* MapUIKIT&SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapUIKIT&SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9B93A62BD8562900504028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E9B93A82BD8562900504028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				3E37F80B2BD8615D009D1E4E /* MapSwiftUI.swift */,
 				3E37F80D2BD86B0A009D1E4E /* LocationManager.swift */,
 				3E48A6E12BDC096F00ED1FB2 /* PlacesView.swift */,
+				3E48A6E32BDC0F6700ED1FB2 /* BuscadorViewController.swift */,
 			);
 			path = "MapUIKIT&SwiftUI";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				3E48A6E22BDC096F00ED1FB2 /* PlacesView.swift in Sources */,
 				3E37F80C2BD8615D009D1E4E /* MapSwiftUI.swift in Sources */,
+				3E48A6E42BDC0F6700ED1FB2 /* BuscadorViewController.swift in Sources */,
 				3E9B93AB2BD8562900504028 /* ViewController.swift in Sources */,
 				3E37F80E2BD86B0A009D1E4E /* LocationManager.swift in Sources */,
 				3E9B93A72BD8562900504028 /* AppDelegate.swift in Sources */,

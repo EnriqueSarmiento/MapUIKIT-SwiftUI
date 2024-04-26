@@ -33,6 +33,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UIKit map" id="J5L-Vg-acZ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="zoR-Nh-ZSw">
+                            <connections>
+                                <segue destination="BcB-3y-wYp" kind="show" id="mOw-lX-mJn"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="h1h-a7-8sK">
                             <connections>
                                 <segue destination="mf9-fx-5XY" kind="show" destinationCreationSelector="segueSwiftUI:" id="w4j-aF-4TQ"/>
@@ -56,6 +61,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6K-r5-pch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1851" y="-2"/>
+        </scene>
+        <!--Buscador View Controller-->
+        <scene sceneID="aiV-2y-40n">
+            <objects>
+                <viewController id="BcB-3y-wYp" customClass="BuscadorViewController" customModule="MapUIKIT_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KjZ-El-z7z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9JD-6q-OXu">
+                                <rect key="frame" x="0.0" y="103" width="393" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BcB-3y-wYp" id="O84-el-PzI"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb2-yj-dqR">
+                                <rect key="frame" x="0.0" y="147" width="393" height="671"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nI1-U9-lIi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nI1-U9-lIi" firstAttribute="trailing" secondItem="hb2-yj-dqR" secondAttribute="trailing" id="I9G-K6-Db9"/>
+                            <constraint firstItem="nI1-U9-lIi" firstAttribute="bottom" secondItem="9JD-6q-OXu" secondAttribute="bottom" constant="671" id="LRS-Tk-j93"/>
+                            <constraint firstItem="hb2-yj-dqR" firstAttribute="top" secondItem="9JD-6q-OXu" secondAttribute="bottom" id="VAJ-kb-H9I"/>
+                            <constraint firstItem="9JD-6q-OXu" firstAttribute="leading" secondItem="nI1-U9-lIi" secondAttribute="leading" id="VVa-Zt-P0j"/>
+                            <constraint firstItem="9JD-6q-OXu" firstAttribute="top" secondItem="nI1-U9-lIi" secondAttribute="top" id="bIz-OR-Ze2"/>
+                            <constraint firstItem="hb2-yj-dqR" firstAttribute="leading" secondItem="nI1-U9-lIi" secondAttribute="leading" id="oob-kV-4Tk"/>
+                            <constraint firstItem="9JD-6q-OXu" firstAttribute="trailing" secondItem="nI1-U9-lIi" secondAttribute="trailing" id="uQK-WF-5PG"/>
+                            <constraint firstItem="nI1-U9-lIi" firstAttribute="bottom" secondItem="hb2-yj-dqR" secondAttribute="bottom" id="x7C-qH-UVb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ACf-9H-3DV"/>
+                    <connections>
+                        <outlet property="Buscar" destination="9JD-6q-OXu" id="d9v-tN-ozF"/>
+                        <outlet property="Mapa" destination="hb2-yj-dqR" id="teK-3Q-Kws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCK-3s-I7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="696"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EcL-eg-sLg">
